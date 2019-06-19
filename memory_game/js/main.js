@@ -34,7 +34,11 @@ function checkForMatch() {
 
 function flipCard(cardId) {
   var selectedCard = cards[cardId];
+
   console.log("User flipped " + selectedCard.rank);
+  console.log(selectedCard.cardImage);
+  console.log(selectedCard.suit);
+
   cardsInPlay.push(selectedCard);
 
   if (cardsInPlay.length === 2) {
@@ -43,4 +47,4 @@ function flipCard(cardId) {
 }
 
 flipCard(0);
-flipCard(0);
+flipCard(2);
